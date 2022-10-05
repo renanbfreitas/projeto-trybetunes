@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { addSong, removeSong } from '../services/favoriteSongsAPI';
+import { addSong, removeSong, getFavoriteSongs } from '../services/favoriteSongsAPI';
 import Header from '../components/Header';
 import getMusics from '../services/musicsAPI';
 import MusicCard from '../components/MusicCard';
@@ -12,12 +12,22 @@ export default class Album extends React.Component {
     favorite: [],
     albumInfo: {},
     loading: true,
+    favoriteMusic: '',
   };
 
   async componentDidMount() {
     const { match: { params: { id } } } = this.props;
     this.consultSong(id);
+    this.favoriteMusic();
   }
+
+  favoriteMusic = async () => {
+    this.setState({ loading: true });
+    const data = await getFavoriteSongs();
+    this.setState({ favoriteMusic: data, loading: false });
+    const { favoriteMusic } = this.state;
+    console.log(favoriteMusic);
+  };
 
   consultSong = async (id) => {
     this.setState({ loading: true });
