@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap') ;
+
+body {
+  align-items: center;
+  background: url('../../images/music-colour-splash.jpg');
+  background-position: 5% 50%;
+  background-size: cover;
+  display: flex;
+  height: 950px;
+  justify-content: center;
+  text-align: center;
+}
+
+.name {
+  border: 1px solid black;
+  border-radius: 20px;
+  color: blue;
+  display: center;
+  font-family: Sacramento , cursive;
+  font-size: 30px;
+  height: 45px;
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+}
+
+.buttonEntrar {
+  background-color: blue;
+  border: 1px solid black;
+  border-radius: 20px;
+  color: white;
+  display: inline-block;
+  font-family: Sacramento , cursive;
+  font-size: 30px;
+  height: 40px;
+  width: 200px;
+}

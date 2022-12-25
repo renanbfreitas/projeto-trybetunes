@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap') ;
+
+.album {
+  align-items: center;
+  color: black;
+  font-family: Sacramento , cursive;
+  font-size: 60px;
+  justify-content: center;
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap') ;
+
+.loading {
+  color: blue;
+  display: center;
+  font-family: Sacramento , cursive;
+  font-size: 80px;
+  height: 45px;
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+}

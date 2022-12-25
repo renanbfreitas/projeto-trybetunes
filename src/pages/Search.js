@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
 import Header from '../components/Header';
 import Loading from '../components/Loading';
+import '../styles/Search.css';
 
 class Search extends React.Component {
   state = {
@@ -39,30 +40,40 @@ class Search extends React.Component {
         ) : (
           <div>
             <form>
-              <label htmlFor="search">
-                <input
-                  type="text"
-                  placeholder="Nome do Artista"
-                  data-testid="search-artist-input"
-                  onChange={ this.handleChange }
-                />
-              </label>
-              <button
-                type="button"
-                data-testid="search-artist-button"
-                disabled={ !validInput }
-                onClick={ this.handleClick }
-              >
-                Pesquisar
-              </button>
+              <div className="nameArtista">
+                <label htmlFor="search" className="nameArtista">
+                  <input
+                    className="nameArtista"
+                    type="text"
+                    placeholder="Nome do Artista"
+                    data-testid="search-artist-input"
+                    onChange={ this.handleChange }
+                  />
+                </label>
+              </div>
+              <div className="buttonPesquisar">
+                <button
+                  className="buttonPesquisar"
+                  type="button"
+                  data-testid="search-artist-button"
+                  disabled={ !validInput }
+                  onClick={ this.handleClick }
+                >
+                  Pesquisar
+                </button>
+              </div>
             </form>
-            <div>
+            <div className="msg">
               {!musicAlbum.length ? 'Nenhum álbum foi encontrado' : (
                 <div>
                   <h1>{`Resultado de álbuns de: ${nome}`}</h1>
                   {musicAlbum.map((music) => (
                     <div key={ music.collectionId }>
-                      <img src={ music.artworkUrl100 } alt={ music.artistName } />
+                      <img
+                        className="imageSelection"
+                        src={ music.artworkUrl100 }
+                        alt={ music.artistName }
+                      />
                       <h3>{music.artistName}</h3>
                       <p>{music.collectionPrice}</p>
                       <p>{music.releaseDate}</p>

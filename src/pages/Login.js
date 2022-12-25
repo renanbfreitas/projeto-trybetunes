@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Redirect } from 'react-router-dom';
 import { createUser } from '../services/userAPI';
 import Loading from '../components/Loading';
+import '../styles/Login.css';
 
 class Login extends React.Component {
   constructor() {
@@ -45,23 +46,29 @@ class Login extends React.Component {
     return (
       <div data-testid="page-login">
         <form>
-          <label htmlFor="name">
-            <input
-              data-testid="login-name-input"
-              type="text"
-              name="name"
-              onChange={ this.formButton }
-              placeholder="Insira seu nome"
-            />
-          </label>
-          <button
-            data-testid="login-submit-button"
-            type="button"
-            disabled={ disabledButton }
-            onClick={ this.validState }
-          >
-            Entrar
-          </button>
+          <div>
+            <label htmlFor="name" className="name">
+              <input
+                className="name"
+                data-testid="login-name-input"
+                type="text"
+                name="name"
+                onChange={ this.formButton }
+                placeholder="Insira seu nome"
+              />
+            </label>
+          </div>
+          <div className="buttonEntrar">
+            <button
+              className="buttonEntrar"
+              data-testid="login-submit-button"
+              type="button"
+              disabled={ disabledButton }
+              onClick={ this.validState }
+            >
+              Entrar
+            </button>
+          </div>
         </form>
         { loading && <Loading /> }
         {redirect && <Redirect to="/search" />}

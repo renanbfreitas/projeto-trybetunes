@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import getMusics from '../services/musicsAPI';
 import MusicCard from '../components/MusicCard';
 import Loading from '../components/Loading';
+import '../styles/Album.css';
 
 export default class Album extends React.Component {
   state = {
@@ -73,7 +74,7 @@ export default class Album extends React.Component {
   render() {
     const { musics, loading, albumInfo, favorite } = this.state;
     return (
-      <div data-testid="page-album">
+      <div data-testid="page-album" className="album">
         <Header />
         {loading ? (<Loading />)
           : (

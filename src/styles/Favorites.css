@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap') ;
+
+.pesquisa {
+  align-items: center;
+  color: blue;
+  font-family: Sacramento , cursive;
+  font-size: 60px;
+  justify-content: center;
+  text-align: center;
+}
+
+.favoritos {
+  align-items: center;
+  color: blue;
+  font-family: Sacramento , cursive;
+  font-size: 60px;
+  justify-content: center;
+  text-align: center;
+}
