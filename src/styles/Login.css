@@ -2,7 +2,7 @@
 
 body {
   align-items: center;
-  background: url('../../images/music-colour-splash.jpg');
+  background: url('../images/music-colour-splash.jpg');
   background-position: 5% 50%;
   background-size: cover;
   display: flex;
