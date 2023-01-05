@@ -45,7 +45,7 @@ src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wor
 
 <img src="https://img.shields.io/static/v1?label=Link&message=TrybeTunes&color=green&style=for-the-badge&logo=github"/>
 
-### <b> <a href="https://project-trybewallet-seven.vercel.app/">TrybeTunes</a> </b> <br>
+### <b> <a href="https://projeto-trybetunes-lfor.vercel.app/">TrybeTunes</a> </b> <br>
 
 </div>
 
