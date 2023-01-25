@@ -1,12 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap') ;
 
 body {
-  align-items: center;
+  align-items: flex;
   background: url('../images/music-colour-splash.jpg');
-  background-position: 5% 50%;
+  background-position: 5% 110%;
   background-size: cover;
+  color: white;
+  font-family: Sacramento , cursive;
+  font-size: 20px;
+  height: 2px;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.trybeName {
+  align-items: center;
+  color: blue;
   display: flex;
-  height: 950px;
+  font-family: Sacramento , cursive;
+  font-size: 70px;
+  height: 250px;
   justify-content: center;
   text-align: center;
 }
@@ -18,10 +32,10 @@ body {
   display: center;
   font-family: Sacramento , cursive;
   font-size: 30px;
-  height: 45px;
+  height: 40px;
   justify-content: center;
   text-align: center;
-  width: 400px;
+  width: 380px;
 }
 
 .buttonEntrar {

@@ -47,6 +47,7 @@ class Login extends React.Component {
       <div data-testid="page-login">
         <form>
           <div>
+          <h1 className="trybeName">TrybeTunes</h1>
             <label htmlFor="name" className="name">
               <input
                 className="name"
